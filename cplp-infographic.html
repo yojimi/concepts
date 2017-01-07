@@ -1,0 +1,75 @@
+<html>
+	<head>
+		<title>CPLP</title>
+		<style>
+			* {box-sizing: border-box; margin: 0; padding: 0;}
+			html {background: #f2f2f2;}
+				.infographic {background: #f6f6f6;}
+					.infographic > * {padding: 1rem; position: relative;}
+					.infographic__welcome {background: rgba(255, 0, 0, 0.5);}
+						.infographic__welcome::after {background: url('cplp-img/bg-welcome.png') 0 0 no-repeat; background-size: 100% 100%; bottom: 0; content: ''; height: 20px; left: 0; position: absolute; width: 100%;}
+					.infographic__body {background: rgba(255, 165, 0, 0.5); padding: 0;}
+						.infographic__body > * {padding: 4rem 2rem; position: relative;}
+						.infographic__body > [class^='infographic__body-']::after {background-size: 100% 100%; bottom: 0; content: ''; left: 0; position: absolute; width: 100%;}
+						.infographic__body-services {background: rgba(0, 128, 0, 0.5);}
+							.infographic__body-services:after {background: url('cplp-img/bg-services.png') 0 0 no-repeat; height: 43px;}
+						.infographic__body-channels {background: rgba(0, 0, 255, 0.5);}
+							.infographic__body-channels:after {background: url('cplp-img/bg-channels.png') 0 0 no-repeat; height: 22px;}
+						.infographic__body-officers {background: rgba(128, 0, 128, 0.5);}
+							.infographic__body-officers:after {background: url('cplp-img/bg-officers.png') 0 0 no-repeat; height: 75px;}
+						.infographic__body-email {background: rgba(165, 42, 42, 0.5);}
+							.infographic__body-email:after {background: url('cplp-img/bg-email.png') 0 0 no-repeat; height: 72px;}
+					.infographic__cta {background: rgba(255, 255, 0, 0.5);}
+				/* This is meant to server 1025px and up */
+				@media screen and (min-width: 1025px) {
+					.infographic {background: url('cplp-img/bg-top.png') 0 0 no-repeat, url('cplp-img/bg-bottom.png') 0 0 no-repeat, url('cplp-img/bg-middle.png') 0 0 no-repeat #f6f6f6; background-size: contain; height: 56.25vw; margin: 0 auto; max-width: 2560px; position: relative;}
+						.infographic > * {height: 100%; padding: 0; position: absolute; width: 100%;}
+						.infographic__welcome {left: 2vw; max-height: 25vw; max-width: 30vw; top: 2vw; z-index: 10;}
+							.infographic__welcome::after {background: none;}
+						.infographic__body {height: 100%; position: relative; width: 100%; z-index: 20;}
+							.infographic__body > [class^='infographic__body-']::after {background: none;}
+							.infographic__body > * {height: 100%; padding: 0; position: absolute; width: 100%;}
+							.infographic__body-services {bottom: 2vw; left: 2vw; max-height: 12vw; max-width: 30vw;}
+							.infographic__body-channels {left: 30vw; max-height: 32vw; max-width: 52vw; top: 13vw;}
+							.infographic__body-officers {max-height: 14vw; max-width: 40vw; right: 2vw; top: 2vw;}
+							.infographic__body-email {bottom: 2vw; max-height: 18vw; max-width: 15vw; right: 2vw;}
+						.infographic__cta {bottom: 0; height: 100%; left: calc(50% - 5vw); max-height: 10vw; max-width: 10vw; width: 100%; z-index: 30;}
+				}
+				/* This is meant to server 2561px and up */
+				@media screen and (min-width: 2561px) {
+					.infographic {height: 41.86vw;}
+						.infographic__welcome {left: 50px; max-height: 700px; max-width: 800px; top: 50px;}
+						.infographic__body {left: 50px; max-height: 1340px; max-width: 2460px; top: 50px;}
+							.infographic__body-services {bottom: 50px; left: 50px; max-height: 300px; max-width: 900px;}
+							.infographic__body-channels {left: 630px; max-height: 800px; max-width: 1500px; top: 320px;}
+							.infographic__body-officers {max-height: 350px; max-width: 900px; right: 50px; top: 50px;}
+							.infographic__body-email {bottom: 50px; max-height: 440px; max-width: 330px; right: 50px;}
+						.infographic__cta {left: calc(50% - 150px); max-height: 300px; max-width: 300px;}
+				}
+		</style>
+	</head>
+	<body>
+		<div class="infographic">
+			<div class="infographic__welcome">
+				&nbsp;
+			</div>
+			<div class="infographic__body">
+				<div class="infographic__body-services">
+					&nbsp;
+				</div>
+				<div class="infographic__body-channels">
+					&nbsp;
+				</div>
+				<div class="infographic__body-officers">
+					&nbsp;
+				</div>
+				<div class="infographic__body-email">
+					&nbsp;
+				</div>
+			</div>
+			<div class="infographic__cta">
+				&nbsp;
+			</div>
+		</div>
+	</body>
+</html>
